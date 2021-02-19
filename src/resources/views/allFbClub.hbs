@@ -2,7 +2,7 @@
     <div class="mt-2">
         <div class="row">
 
-            {{#each footballClubs}}
+            {{#each list}}
             <div class="col-3 my-2">
                 <div class="card" style="width: 18rem;">
                     <a href="/all-fb-club/{{this.slug}}" class="d-flex justify-content-center">
@@ -10,9 +10,9 @@
                     </a>
                     <div class="card-body">
                         <a href="/all-fb-club/{{this.slug}}">
-                            <h4 class="card-title">{{this.name}}</h4>
+                            <h4 class="card-title">{{this}}</h4>
                         </a>
-                        <p class="card-text">{{this.coach}}</p>
+                        <p class="card-text">{{this}}</p>
                         <a href="/all-fb-club/{{this.slug}}" class="btn btn-primary">Detail</a>
                     </div>
                 </div>
